@@ -28,16 +28,18 @@ function Business(props) {
             paddingTop: "150px",
             display: "flex",
             justifyContent: "center",
-        }} id='pdf'>
+        }} >
             <div style={{
                 display: "flex",
                 justifyContent: "center",
                 marginRight: "20",
-                width: "400"
+                width: "400",
+                
             }}>
                 <Card style={{
                     width: "500",
-                    height: "200"
+                    height: "200",
+                    id:'pdf'
                 }}>
                     <div style={{
                         marginBottom: "20px",
@@ -63,12 +65,13 @@ function Business(props) {
                         >
                             <Button variant='contained' style={{ marginLeft: "20px", marginRight: "20px" }}>LinkedIn</Button>
                             <Button variant='contained' style={{ marginRight: "20px",marginRight:"20px" }}>Twitter</Button>
-                            <Button variant='contained' style={{ marginRight: "20px"}} onClick={handledownload}>Download</Button>
+                            
                         </Box>
                     </div>
                 </Card>
+               
             </div>
-            
+            <Button variant='contained' style={{ marginRight: "20px"}} onClick={handledownload}>Download</Button>
         </div>
     )
 }
